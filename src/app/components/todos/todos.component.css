@@ -32,20 +32,41 @@
   font-size: 20px;
   outline: none;
 }
+.delete {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  appearance: none;
+  border: none;
+  border-radius: 5%;
+  outline: none;
+  background: none;
+  filter: drop-shadow(0 0 0.75rem crimson);
+
+  background-color: #fe4880;
+  color: #fff;
+  margin: auto;
+
+  padding: 1px 1px;
+  font-size: 18px;
+  font-weight: 700;
+}
 .todo-submit {
   display: block;
   width: 100%;
   max-width: 200px;
   appearance: none;
   border: none;
+  border-radius: 5%;
   outline: none;
   background: none;
+  filter: drop-shadow(0 0 0.75rem rgb(95, 83, 85));
 
-  background-color: #fe4880;
+  background-color: #169b83;
   color: #fff;
-  margin: 15px auto;
+  margin: 5px auto;
 
-  padding: 10px 15px;
+  padding: 12px 15px;
   font-size: 18px;
   font-weight: 700;
 }
