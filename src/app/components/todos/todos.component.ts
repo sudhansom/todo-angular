@@ -15,7 +15,7 @@ export class TodosComponent implements OnInit {
     },
     {
       content: 'second todo',
-      completed: false,
+      completed: true,
     },
   ];
 
