@@ -8,18 +8,28 @@ import { Todo } from './../../models/Todos';
   styleUrls: ['./todos.component.css'],
 })
 export class TodosComponent implements OnInit {
-  todos: Todo[] = [
-    {
-      content: 'first todo',
-      completed: false,
-    },
-    {
-      content: 'second todo',
-      completed: true,
-    },
-  ];
+  todos: Todo[] = [];
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.todos = [
+      {
+        content: 'first todo',
+        completed: false,
+      },
+      {
+        content: 'second todo',
+        completed: true,
+      },
+    ];
+  }
+  toogleDone(id: number) {
+    this.todos = this.todos.map((value, indx) => {
+      if (indx == id) {
+        value.completed = !value.completed;
+      }
+      return value;
+    });
+  }
 }
